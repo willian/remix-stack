@@ -1,6 +1,19 @@
-# Welcome to Remix!
+# Remix Stack Template
+
+```
+npx create-remix@latest --template willian/remix-stack
+```
 
 - [Remix Docs](https://remix.run/docs)
+
+## What's in the stack
+
+- Styling with [Tailwind](https://tailwindcss.com/)
+- Local third party request mocking with [MSW](https://mswjs.io)
+- Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
+- Code formatting with [Prettier](https://prettier.io)
+- Linting with [ESLint](https://eslint.org)
+- Static Types with [TypeScript](https://typescriptlang.org)
 
 ## Development
 
