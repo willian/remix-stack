@@ -33,7 +33,7 @@ async function main({ rootDirectory }) {
     fs.writeFile(PACKAGE_JSON_PATH, newPackageJson),
     fs.writeFile(
       README_PATH,
-      readme.replace(new RegExp('RemixStackTemplate', 'g'), toLogicalID(APP_NAME)),
+      readme.replace(new RegExp('Remix Stack Template', 'g'), toLogicalID(APP_NAME)),
     ),
     fs.copyFile(
       path.join(rootDirectory, 'remix.init', 'gitignore'),
