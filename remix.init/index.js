@@ -1,3 +1,4 @@
+const { execSync } = require('child_process')
 const crypto = require('crypto')
 const fs = require('fs/promises')
 const path = require('path')
@@ -40,6 +41,15 @@ async function main({ rootDirectory }) {
       path.join(rootDirectory, '.gitignore'),
     ),
   ])
+
+  console.log(`Running the validate script to make sure everything was set up properly`)
+  execSync(`npm run validate`, { stdio: 'inherit', cwd: rootDirectory })
+
+  console.log(
+    `Setup is complete. You're now ready to rock and roll 🤘
+Start development with \`npm run dev\`
+    `.trim(),
+  )
 }
 
 module.exports = main
