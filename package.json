@@ -16,7 +16,7 @@
     "start": "remix-serve build",
     "typecheck": "tsc -b",
     "test": "vitest",
-    "validate": "run-p \"test -- --run\" lint typecheck"
+    "validate": "run-p \"test -- --run\" generate:css lint typecheck"
   },
   "dependencies": {
     "@remix-run/node": "*",
