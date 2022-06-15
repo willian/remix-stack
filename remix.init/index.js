@@ -45,6 +45,8 @@ async function main({ rootDirectory }) {
   console.log(`Running the validate script to make sure everything was set up properly`)
   execSync(`npm run validate`, { stdio: 'inherit', cwd: rootDirectory })
 
+  execSync(`git init`, { stdio: 'inherit', cwd: rootDirectory })
+
   console.log(
     `Setup is complete. You're now ready to rock and roll 🤘
 Start development with \`npm run dev\`
